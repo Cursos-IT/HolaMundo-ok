@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("https://blog.selfbank.es/wp-content/uploads/2018/07/iStock-889946406-720x320.jpg") no-repeat center fixed;
+            background-size: cover;
+        }
+
+        main {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        h1 {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1 id="titulo">HOLA MUNDO!</h1>
+        <button onclick="cambiaColor('rojo')">ROJO</button>
+        <button onclick="cambiaColor('amarillo')">AMARILLO</button>
+    </main>
+    <script>
+        function cambiaColor(color) {
+            if (color == 'rojo') {
+                document.getElementById("titulo").style.color = "red"
+            } else {
+                document.getElementById("titulo").style.color = "yellow"
+            }
+        }
+    </script>
+</body>
+
+</html>
